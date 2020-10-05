@@ -254,8 +254,9 @@ From here, click the clipboard icon.
 
 ![clipboard icon](https://curriculum-content.s3.amazonaws.com/copy-clone-command-button.png)
 
-Now, open your Cloud9 IDE. In the terminal, type `git clone `, then paste in
-what you copied to your clipboard. It should look similar to the example below, but with your GitHub username included:
+Now, open your Cloud9 IDE. In the terminal, type `git clone`, then paste in what
+you copied to your clipboard. It should look similar to the example below, but
+with your GitHub username included:
 
 ```sh
 git clone git@github.com:<your-username>/cloud9-aws-environment-setup.git
