@@ -123,13 +123,13 @@ The Cloud9 IDE is divided into three main sections.
   <img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-directory-navigation.png" height="200px">
 
 - Along the bottom of the page is a terminal. You will use this terminal to
-  write and execute commands. Click the terminal, type `echo "hello world!"`,
+  write and execute commands. Click the terminal, type `echo "hello world"`,
   and press `enter` / `return` to test it out. The terminal will print out `hello
-  world!` in response.
+  world` in response.
 
   ![cloud9 terminal example](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-terminal-example.png)
 
-- The IDE's central section (where you see the welcome page) is will display
+- The IDE's central section (where you see the welcome page) will display
   file contents. Clicking on files in the directory navigation will open them up
   in this section.
 
