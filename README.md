@@ -40,11 +40,11 @@ website, click on your avatar in the upper right corner of the page, then click
 **Manage Account**. You can also access this page using the direct URL,
 [https://learn.co/account](https://learn.co/account).
 
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-manage-account-menu.png" height=200>
+<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-manage-account-menu.png" height="200px">
 
 Once you are on the **Account Management** page, click **Connected Apps**.
 
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-connect-apps-nav-button.png" height=50>
+<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-connect-apps-nav-button.png" height="50px">
 
 
 From here, click the **Connect Account** button to connect your GitHub Account.
@@ -67,7 +67,7 @@ credit card billing information. Once you have set up your account, head back to
 theh [cloud9 landing page][cloud9] and click **Sign in to the Console** in the
 upper right.
 
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-sign-in-to-console.png" height=50>
+<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-sign-in-to-console.png" height="50px">
 
 The AWS Management Console will load. In the **Find Services** search bar,
 search for `Cloud9`.
@@ -80,7 +80,7 @@ bookmarking this page to get back to it easily. If you have already created a
 Cloud9 IDE, the environment instance will be listed here. In our case, we
 want to click the **Create environment** button.
 
-<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-create-environment-button.png" height=50>
+<img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-create-environment-button.png" height="50px">
 
 AWS will prompt you to give your environment a name and an optional
 description. Click **Next Step** when ready.
@@ -120,7 +120,7 @@ The Cloud9 IDE is divided into three main sections.
   various assignments, this section will become populated with files and
   folders.
 
-  <img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-directory-navigation.png" height=200>
+  <img src="https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-directory-navigation.png" height="200px">
 
 - Along the bottom of the page is a terminal. You will use this terminal to
   write and execute commands. Click the terminal, type `echo "hello world!"`,
@@ -218,7 +218,7 @@ You should be able to access this lesson from your Homeroom or Welcome course.
 In the upper right corner of the lesson, you will see a **Fork** button. Click
 this button.
 
-<img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" height=30>
+<img src="https://curriculum-content.s3.amazonaws.com/fork-link.png" height="30px" alt="fork link">
 
 If you have correctly configured your GitHub account and connected it to your
 Flatiron School account, clicking **Fork** will open GitHub in a new browser
