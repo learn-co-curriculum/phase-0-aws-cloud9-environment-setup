@@ -84,7 +84,7 @@ want to click the **Create environment** button.
 AWS will prompt you to give your environment a name and an optional
 description. Click **Next Step** when ready.
 
-![cloud9 name and description](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-environment-name-description.png)
+![cloud9 name and description](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-environment-name-and-description.png)
 
 After naming the environment, you will need to select the Environment type and
 Instance type. Choose **Create a new EC2 instance for environment (direct
@@ -155,9 +155,9 @@ The terminal will indicate several items are being installed.
 
 ![learn-co gem installing](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-gem-install.png)
 
-When finished, it will display `1 gem installed`.
+When finished, it will display `24 gems installed`.
 
-![learn-co gem install success](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-gem-install-success.png)
+![learn-co gem install success](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-learn-gem-install.png)
 
 The second gem we need to install is `bunder`. To install, type the following
 into the terminal:
