@@ -142,7 +142,7 @@ The Cloud9 IDE is divided into three main sections.
 Now that you have your Cloud9 IDE up and running, it is time to do some
 configuration for this course.
 
-## Configuring the Cloud9 IDE
+## Configure the Cloud9 IDE
 
 For the first part of this course, we need to install two tools, also known as
 Ruby gems. The first gem is `learn-co`, Flatiron School's tool for testing and
@@ -170,39 +170,116 @@ gem install bundler
 Similar to the `learn-co` gem, you will see a message `1 gem installed` once
 the installation is complete.
 
-## Configuring the Learn Gem
+## Configure Git and GitHub
 
-Next, we need to set up the `learn-co` gem so that it can connect to your
-Flatiron School account.
+Git is the tool that we’ll use to download and upload the work that we do in
+labs and lessons. To use Git without signing in every time, you can create a
+Secure Shell (SSH) key and associate that to your GitHub account. Lastly, you
+will want to run a few commands to make sure that when you use Git, you get the
+proper credit for your work. This step will ask you to do work both in your
+browser and your terminal.
 
-In your Cloud9 terminal, run `learn whoami`. You will see a message that you
-need an OAuth token to connect to the Learn web application.
+## Action Items
 
-![learn-co oauth prompt](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-gem-oauth-prompt.png)
+1. Click on the terminal in the Cloud9 IDE
+2. Type `git config --global color.ui true` and press `<Enter>`
+3. Type `git config --global user.name` + `<Space>` + your name and press `<Enter>` _(Note: this should be your full name, not your GitHub username, in quotes.)_
+4. Type `git config --global user.email` + `<Space>` + the email address you used to sign up to GitHub and press `<Enter>`
+5. Type `ssh-keygen` and press `<Enter>`
+6. For each prompt **do not type anything**, just continue to press `<Enter>`
+7. Type `cat ~/.ssh/id_rsa.pub` and press `<Enter>`. Select and copy the output, starting with `ssh-rsa`. 
+8. Open the [GitHub New SSH key form][] (https://github.com/settings/ssh/new) _(Note: you need to be logged in to GitHub to access that link.)_
+9. Type "My Cloud9 IDE" in the "Title" input field
+10. Paste what’s on your clipboard from step seven in the "Key" input field. Each key is unique, but it should look something like this (notice the beginning and end):
 
-You can access this token from your account page on Flatiron School's website by
-going to `https://portal.flatironschool.com/<your-github-username>`. Replace
-`<your-github-username>` with your actual GitHub username.
+    ```sh
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWN9he+rGvUsQP
+    0vldUZT7Z/nTCPqFAPqjiDhNX0SxKdlWeTvhHXjqFRzy0K3cXpgxe0NR
+    /yLUphnFbsqCTzgLYTwMn/m8je/gOfPMtZcRuoOj69AJh5LM+TdLcFLZ
+    gL1sxjiLCcVO7Sn9ThTYEHSCsS6r2ZaTlFMfakeKBfH9pdWZHqR84pHP
+    aq3QxkkrWC7RGrPsBPTYjLYuy7d3Mjw+fUar2oeLUpmMjxX8Fqs7Qf5L
+    QR+4/MjA1PMVCVXSRDFUyDYZ756XBcnqQqyaJmSSfgSrk8OE3hqW
+    MDFerSP0tzgq26YBWnqsqmCTrSiDgHzgSyO7B8FizTUgn/okdD1b 
+    ec2-user@ip-174-35-43-2
+    ```
 
-> **Note:** The terminal message provides a URL example starting with
-> `https://learn.co`. This URL is Flatiron School's older online platform and may
-> not be available in the future. `https://portal.flatironschool.com/` should be
-> used instead.
+11. Click "Add SSH Key"
 
-Scroll to the bottom of your account page. You should see a box that includes
-**OAuth Token**, followed by a long set of letters and numbers
+[GitHub New SSH key form]: https://github.com/settings/ssh/new
 
-![learn-co oauth section](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-oauth-section.png)
+### Check Your Work
 
-As noted on the page, this set of letters and numbers is unique to your account
-and will be used to identify you, so do not share it with anyone. Select the
-entire string of characters and copy it, then head back to the Cloud9 IDE.
+If you see your new SSH key beneath the "SSH keys" heading, continue below.
 
-In the terminal, paste in the copied letters and numbers and press enter /
-return. The `learn-co` gem will display `Authenticating...`, then output the
-name, username, and email associated with your Flatiron School account.
+## Connect Your GitHub Account to your Flatiron School Portal Account
 
-If you see your information displayed, you are all set.
+Flatiron School has some helpful tools for you when working on your labs and
+lessons through GitHub. For those tools to work, you will need to connect your
+Flatiron School Portal account to your GitHub account.
+
+### Action Item
+
+1. Open the [Flatiron School Student Portal webpage][]
+   (https://portal.flatironschool.com) _(Note: you need to be logged in to
+   Flatiron School Student Portal.)_
+2. Click on "Course" in the navigation bar at the top of the screen
+3. Click the blue "Switch Materials" button in the dropdown
+4. Click on the course that you are about to start
+5. Open the [GitHub Account Management webpage][] (https://learn.co/account/github)
+   _(Note: you may be asked to log in. Use your Flatiron School Student Portal
+   username and password here.)_
+   <!-- Note: this domain is not the Portal because of Canvas flows -->
+6. Connect your GitHub account to your Flatiron School Portal account
+
+[Flatiron School Student Portal webpage]: https://portal.flatironschool.com
+[GitHub Account Management webpage]: https://learn.co/account/github
+
+### Check Your Work
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mIzuVjiNre4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+If you go back to the [GitHub Account Management webpage][]
+(https://portal.flatironschool.com/account/github) and see a red "Disconnect"
+button, continue below.
+
+[GitHub Account Management webpage]: https://portal.flatironschool.com/account/github
+
+## Configure the learn-co gem on Cloud9
+
+The learn-co gem is the tool that we’ll be using to test and submit the labs and
+lessons that we’re working on. Before you can use it, you will need to connect
+your Flatiron School Portal account to the copy of the learn-co gem on your
+computer. This step will ask you to do work both in your browser and your
+terminal.
+
+### Action Item
+
+1. Click on the terminal in the Cloud9 IDE
+2. Type `touch ~/.netrc && chmod 0600 ~/.netrc` and press `<Enter>` _(Note: you may be asked to enter your password.)_
+3. Type `learn whoami` and press `<Enter>` _(Note: don’t type anything here yet.)_
+4. Go to your [Public Profile Management webpage][]
+   (https://portal.flatironschool.com/account/profile) in your browser _(Note:
+   if you’re not logged in, you will need to log in again.)_
+5. Look for the "Username" heading and copy your username, but do not copy the
+   text `https://learn.co/`
+6. Go to your Flatiron School Student Portal Profile page
+   ("https://portal.flatironschool.com/" + your username)
+7.  Scroll all the way to the bottom of the page to the heading "The information
+    below is sensitive and unique to your account. Only you can view this
+    information." with a red background.
+8.  Copy the string of characters under the "OAuth token" header
+9.  Paste the string of characters into the terminal and press `<Enter>`
+
+[Public Profile Management webpage]: https://portal.flatironschool.com/account/profile
+
+### Check Your Work
+
+<figure>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1eX_lwNfPCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <figcaption>Although this shows a local environment, your Cloud9 terminal should respond to the same commands seen in the video</figcaption>
+</figure>
+
+If you see a message with your name, username, and email, continue to the next lesson, **Verify and Troubleshoot Your Environment Setup on macOS**.
 
 ## Testing Out Your Configuration
 
