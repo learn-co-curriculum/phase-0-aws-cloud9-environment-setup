@@ -156,11 +156,12 @@ The terminal will indicate several items are being installed.
 
 ![learn-co gem installing](https://curriculum-content.s3.amazonaws.com/environment-setup/learn-co-gem-install.png)
 
-When finished, it will display `24 gems installed`.
+When finished, it will display `24 gems installed` (the number of gems might 
+be slightly different depending on changes to these gems over time).
 
 ![learn-co gem install success](https://curriculum-content.s3.amazonaws.com/environment-setup/cloud9-learn-gem-install.png)
 
-The second gem we need to install is `bunder`. To install, type the following
+The second gem we need to install is `bundler`. To install, type the following
 into the terminal:
 
 ```sh
